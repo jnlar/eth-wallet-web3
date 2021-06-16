@@ -21,11 +21,13 @@ db.once('open', () => {
 
 const wallet = db.collection('wallets');
 
-const account = require('./account-route')
+const account = require('./account-route');
+const balance = require('./balance-route');
 
 app.use('/wallet', account);
+app.use('/balance', balance);
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
 	console.log(`Listening on port: ${PORT}`);
 	console.log(
 		wallet != null ?

@@ -1,2 +1,2 @@
-### Eth wallet stuff
-Interfacing with web3 lib to create eth wallets
+### Eth web3.js lib
+web3 lib stuff
